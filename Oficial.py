@@ -240,7 +240,7 @@ class trabalho():
         canvas = tk.Canvas(self.f_resp,bg="#baf7f3")
         canvas.place(relx=0, rely=0, relwidth=1, relheight=1)
         scrollbar_y = ttk.Scrollbar(self.f_call, orient="vertical", command=canvas.yview)
-        scrollbar_y.place(relx=0.96, rely=0.1, relheight=0.9)
+        scrollbar_y.place(relx=0, rely=0.1, relheight=0.9)
         self.f_resp.update()
         canvas.configure(yscrollcommand=scrollbar_y.set)
         f_scrool = tk.LabelFrame(canvas, bg="#baf7f3", width=590, height=tamanho, bd=0)
@@ -269,7 +269,7 @@ class trabalho():
                     raiz = self.encontrar_raiz(float(va), float(me))
                     qnt, erru, raix = raiz
                     txt = tk.Label(f_scrool, bg="#baf7f3", text=f'Tentativas = {qnt} , erro = {abs(erru):.11f} , Raiz aproximada = {raix:.20f}', width=70, height=1, font="Arial 10 bold", bd=3)
-                    txt.place(x=2, y=y)
+                    txt.place(x=5, y=y)
                     y += 30
                     print(f"raiz entre {va} e {me}")
                     print(f"A raiz  da função é aproximadamente {raix:.20f}.\n")
