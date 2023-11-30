@@ -12,7 +12,7 @@ class trabalho():
         self.dunf=tk.Tk()
         self.dunf.geometry("800x500+200+100")
         self.dunf.title("Geogebra-lite")
-        self.dunf.iconbitmap("icone.ico")
+        self.dunf.iconbitmap("trabalho_calculo/icone.ico")
         self.dunf.resizable(0,0)
         self.ini()
         self.dunf.mainloop()

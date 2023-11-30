@@ -49,7 +49,7 @@ class Sla():
     def funcao(self, x): 
         if x ==0:
             x=-0.00000000001
-        return x**2-1
+        return 8*x + log(x)
     def encontrar_raiz(self, a, b):
         cnt = 0
         c = 0
